@@ -1,0 +1,16 @@
+<h1>Task Manager</h1>
+
+<p>Application for managing a to do list.</p>
+
+<!-- HTML Link -->
+<!-- <a href="/tasks/index">Task 1</a><br /> -->
+<!-- Rails Link -->
+<!-- <%= link_to('Task 2', {controller: 'tasks', action: 'index'}) %><br /> -->
+
+
+<%= link_to('Categories', categories_path) %><br />
+<%= link_to('Tasks', tasks_path(page: 1)) %><br />
+<!--<%= link_to('Tasks', {controller: 'tasks', action: 'index', page: 1 }) %><br /> -->
+
+<!-- 'About' is in a same controller as this Task Manager, so we needn't specify controller -->
+<%= link_to('About', { action: 'about', page: 5, id: 20 }) %><br />

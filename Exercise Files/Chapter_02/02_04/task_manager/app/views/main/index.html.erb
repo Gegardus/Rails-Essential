@@ -1,0 +1,13 @@
+<h1>Task Manager</h1>
+<p>This is an application for managing a to do list.</p>
+
+<% x = 1 + 1 %><br />
+<%= x %><br />
+
+<% tasks = ['Fold laundry', 'Sweep porch', 'Wash dishes', 'Mow lawn'] %>
+
+<ul>
+<% tasks.each do |task| %>
+  <li><%= task %></li>
+<% end %>
+</ul>
